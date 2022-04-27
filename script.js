@@ -51,5 +51,15 @@
 
 //confirm('Hello');
 
-const answer = +prompt('Это ты???');
-alert(typeof(answer));
+// const answer = +prompt('Это ты???');
+// alert(typeof(answer));
+
+const answers = [];
+
+answers[0] = prompt('Как ваше имя???', '');
+answers[1] = prompt('Как ваша фамилия???', '');
+answers[2] = prompt('Сколько вам лет???', '');
+
+console.log(answers);
+
+//document.write(answers);
