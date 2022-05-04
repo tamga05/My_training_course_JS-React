@@ -1,5 +1,26 @@
 "use strict";
 
+//console.log("Hello");
+
+//alert("Hello");
+
+//confirm('Hello');
+
+// const answer = +prompt('Это ты???');
+// alert(typeof(answer));
+
+// const answers = [];
+
+// answers[0] = prompt('Как ваше имя???', '');
+// answers[1] = prompt('Как ваша фамилия???', '');
+// answers[2] = prompt('Сколько вам лет???', '');
+
+// console.log(answers);
+
+//document.write(answers);
+
+
+
 /* Задание на урок:
 
 1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на
@@ -45,21 +66,37 @@
 // console.log(personalMovieDB);
 
 
-//console.log("Hello");
+// 1.
 
-//alert("Hello");
+//let numberOfFilms;
 
-//confirm('Hello');
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-// const answer = +prompt('Это ты???');
-// alert(typeof(answer));
+//console.log(numberOfFilms);
 
-const answers = [];
+// 2.
 
-answers[0] = prompt('Как ваше имя???', '');
-answers[1] = prompt('Как ваша фамилия???', '');
-answers[2] = prompt('Сколько вам лет???', '');
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: [],
+    actors: [],
+    genres: { },
+    privat: false
+};
 
-console.log(answers);
+//console.log(personalMovieDB);
 
-//document.write(answers);
+// 3.
+
+const a = prompt('Один из последних просмотренных фильмов?', '');
+const b = prompt('На сколько оцените его?', '');
+const c = prompt('Один из последних просмотренных фильмов?', '');
+const d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
+// let nameUser = prompt('Назовите ваше имя', '');
+// console.log(nameUser);
