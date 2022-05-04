@@ -66,37 +66,47 @@
 // console.log(personalMovieDB);
 
 
-// 1.
+// // 1.
 
-//let numberOfFilms;
+// //let numberOfFilms;
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-//console.log(numberOfFilms);
+// //console.log(numberOfFilms);
 
-// 2.
+// // 2.
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: [],
-    actors: [],
-    genres: { },
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: [],
+//     actors: [],
+//     genres: { },
+//     privat: false
+// };
 
-//console.log(personalMovieDB);
+// //console.log(personalMovieDB);
 
-// 3.
+// // 3.
 
-const a = prompt('Один из последних просмотренных фильмов?', '');
-const b = prompt('На сколько оцените его?', '');
-const c = prompt('Один из последних просмотренных фильмов?', '');
-const d = prompt('На сколько оцените его?', '');
+// const a = prompt('Один из последних просмотренных фильмов?', '');
+// const b = prompt('На сколько оцените его?', '');
+// const c = prompt('Один из последних просмотренных фильмов?', '');
+// const d = prompt('На сколько оцените его?', '');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
-// let nameUser = prompt('Назовите ваше имя', '');
-// console.log(nameUser);
+// // let nameUser = prompt('Назовите ваше имя', '');
+// // console.log(nameUser);
+
+// Циклы.
+
+let num = 21;
+
+while (num <= 25) {
+    console.log(num);
+    num++;
+}
+
