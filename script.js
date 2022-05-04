@@ -103,20 +103,23 @@
 
 // Циклы.
 
-// let num = 21;
+// 1.
+let num = 21;
 
-// while (num <= 25) {
-//     console.log(num);
-//     num++;
-// }
-
-let num = 1;
-
-do {
+while (num <= 25) {
     console.log(num);
     num++;
-} while (num < 5);
+}
 
+// 2.
+let numb = 1;
+
+do {
+    console.log(numb);
+    numb++;
+} while (numb < 5);
+
+// 3.
 for ( let i = 1; i <= 3; i++) {
     console.log(i);
 }
