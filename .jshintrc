@@ -4,7 +4,7 @@
 	"indent": 4,
 	"undef": true,
 	"quotmark": false,
-	"maxlen": 80,
+	"maxlen": 120,
 	"trailing": true,
 	"curly": true,
 	"strict": true,
