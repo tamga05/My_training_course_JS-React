@@ -377,3 +377,5 @@ let object = {
 
 console.log(Object.keys(object));
 console.log(Object.keys(object).length);
+console.log(object.children.son2);
+
