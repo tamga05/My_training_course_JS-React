@@ -382,13 +382,14 @@ let object = {
 
 // Деструктуризация объекта
 
-// const {daughter2, son2} = object.children;
-// console.log(daughter2);
-// console.log(son2);
+const {daughter2, son2} = object.children;
+console.log(daughter2);
+console.log(`Моя самая любимая кошечка ${daughter2} !!!`);
+//console.log(son2);
 
 
 // Удаление свойства из объекта
 
-console.log(object);
-delete object.age;
-console.log(object);
+// console.log(object);
+// delete object.age;
+// console.log(object);
