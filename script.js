@@ -375,7 +375,20 @@ let object = {
     }
 };
 
-console.log(Object.keys(object));
-console.log(Object.keys(object).length);
-console.log(object.children.son2);
+// console.log(Object.keys(object));
+// console.log(Object.keys(object).length);
+// console.log(object.children.son2);
 
+
+// Деструктуризация объекта
+
+// const {daughter2, son2} = object.children;
+// console.log(daughter2);
+// console.log(son2);
+
+
+// Удаление свойства из объекта
+
+console.log(object);
+delete object.age;
+console.log(object);
