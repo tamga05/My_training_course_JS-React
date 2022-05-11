@@ -385,7 +385,7 @@ let object = {
 const {daughter2, son2} = object.children;
 console.log(daughter2);
 console.log(`Моя самая любимая кошечка ${daughter2} !!!`);
-//console.log(son2);
+console.log(son2);
 
 
 // Удаление свойства из объекта
@@ -395,8 +395,25 @@ console.log(`Моя самая любимая кошечка ${daughter2} !!!`);
 // console.log(object);
 
 
-
+// Разворачивание массива с помощью спред-оператора
 const arr = [1, 5, 10, 15];
 
 //console.log(arr.at(0));
 console.log(...arr);
+
+// Разворачивание объекта с помощью спред-оператора
+
+const abc = {
+    a: 1,
+    b: 'mama',
+    c:21
+};
+
+const ABC = {...abc};
+
+console.log(ABC);
+
+
+// Динамическая типизация
+console.log(typeof(+'num'));
+
