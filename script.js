@@ -393,3 +393,10 @@ console.log(`Моя самая любимая кошечка ${daughter2} !!!`);
 // console.log(object);
 // delete object.age;
 // console.log(object);
+
+
+
+const arr = [1, 5, 10, 15];
+
+//console.log(arr.at(0));
+console.log(...arr);
