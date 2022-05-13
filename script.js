@@ -485,3 +485,13 @@ P.S. Функции вызывать не обязательно*/
 
 // 12. Чему равно 0 || "" || 2 || undefined || true || falsе; ?
 //console.log(0 || "" || 2 || undefined || true || falsе);
+
+
+// 1.
+const promo = document.getElementsByClassName('promo__adv');
+promo[0].remove();
+
+// 2.
+const genre = document.getElementsByClassName('promo__genre');
+genre[0].textContent = 'драма';
+
