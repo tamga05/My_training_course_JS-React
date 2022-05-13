@@ -487,11 +487,47 @@ P.S. Функции вызывать не обязательно*/
 //console.log(0 || "" || 2 || undefined || true || falsе);
 
 
+const movieDB = {
+    movies: [
+        "Логан",
+        "Лига справедливости",
+        "Ла-ла лэнд",
+        "Одержимость",
+        "Скотт Пилигрим против..."
+    ]
+};
+
+
 // 1.
 const promo = document.getElementsByClassName('promo__adv');
 promo[0].remove();
 
+
 // 2.
 const genre = document.getElementsByClassName('promo__genre');
 genre[0].textContent = 'драма';
+
+
+// 3.
+const bg = document.querySelector('.promo__bg');
+//bg.style.backgroundImage = "url('img/bg.jpg')";
+
+// Или можно так записать
+bg.style.cssText = 'background-image: url(img/bg.jpg)';
+
+
+// 4 и 5.
+const movieList = document.querySelector('.promo__interactive-list');
+
+movieList.innerHTML = '';
+
+movieDB.movies.sort();
+
+movieDB.movies.forEach((film, i) => {
+    movieList.innerHTML += `
+    <li class="promo__interactive-item">${i + 1} ${film}
+        <div class="delete"></div>
+    </li>
+    `;
+});
 
