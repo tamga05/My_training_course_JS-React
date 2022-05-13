@@ -485,49 +485,101 @@ P.S. Функции вызывать не обязательно*/
 
 // 12. Чему равно 0 || "" || 2 || undefined || true || falsе; ?
 //console.log(0 || "" || 2 || undefined || true || falsе);
+//
+//
+// const movieDB = {
+//     movies: [
+//         "Логан",
+//         "Лига справедливости",
+//         "Ла-ла лэнд",
+//         "Одержимость",
+//         "Скотт Пилигрим против..."
+//     ]
+// };
+//
+//
+// // 1.
+// const promo = document.getElementsByClassName('promo__adv');
+// promo[0].remove();
+//
+//
+// // 2.
+// const genre = document.getElementsByClassName('promo__genre');
+// genre[0].textContent = 'драма';
+//
+//
+// // 3.
+// const bg = document.querySelector('.promo__bg');
+// //bg.style.backgroundImage = "url('img/bg.jpg')";
+//
+// // Или можно так записать
+// bg.style.cssText = 'background-image: url(img/bg.jpg)';
+//
+//
+// // 4 и 5.
+// const movieList = document.querySelector('.promo__interactive-list');
+//
+// movieList.innerHTML = '';
+//
+// movieDB.movies.sort();
+//
+// movieDB.movies.forEach((film, i) => {
+//     movieList.innerHTML += `
+//     <li class="promo__interactive-item">${i + 1} ${film}
+//         <div class="delete"></div>
+//     </li>
+//     `;
+// });
 
 
-const movieDB = {
-    movies: [
-        "Логан",
-        "Лига справедливости",
-        "Ла-ла лэнд",
-        "Одержимость",
-        "Скотт Пилигрим против..."
-    ]
+// События и их обработчики
+
+// 1способ
+//------------------------------------------------------
+// const btn = document.getElementById('button');
+// const btn1 = document.getElementById('button1');
+// const btn2 = document.getElementById('button2');
+//------------------------------------------------------
+// 1 способ
+// btn.onclick = function() {
+//     alert('Hello, Andrey !!!');
+// };
+
+// 2 способ
+// btn.addEventListener('click', () => {
+//     alert('Hello, Andrey !!!');
+// });
+
+
+//------------------------------------------------------
+// btn.addEventListener('click', (event) => {
+//     //console.log(event.target);
+//     event.target.remove(); // Убирает элемент с экрана после нажатия
+// });
+//
+// btn1.addEventListener('click', (event) => {
+//     //console.log(event.target);
+//     event.target.remove(); // Убирает элемент с экрана после нажатия
+// });
+//
+// btn2.addEventListener('click', (event) => {
+//     //console.log(event.target);
+//     event.target.remove(); // Убирает элемент с экрана после нажатия
+// });
+//-------------------------------------------------------
+
+
+//-------------------------------------------------------
+let i = 0;
+
+const deleteElement = (event) => {
+    event.target.remove();
+    i++;
 };
 
+const btn = document.querySelectorAll('button');
 
-// 1.
-const promo = document.getElementsByClassName('promo__adv');
-promo[0].remove();
-
-
-// 2.
-const genre = document.getElementsByClassName('promo__genre');
-genre[0].textContent = 'драма';
-
-
-// 3.
-const bg = document.querySelector('.promo__bg');
-//bg.style.backgroundImage = "url('img/bg.jpg')";
-
-// Или можно так записать
-bg.style.cssText = 'background-image: url(img/bg.jpg)';
-
-
-// 4 и 5.
-const movieList = document.querySelector('.promo__interactive-list');
-
-movieList.innerHTML = '';
-
-movieDB.movies.sort();
-
-movieDB.movies.forEach((film, i) => {
-    movieList.innerHTML += `
-    <li class="promo__interactive-item">${i + 1} ${film}
-        <div class="delete"></div>
-    </li>
-    `;
+btn.forEach(item => {
+    item.addEventListener('click', deleteElement);
 });
-
+//-------------------------------------------------------
