@@ -413,9 +413,6 @@ P.S. Функции вызывать не обязательно*/
 //console.log(typeof(3 + ''));
 
 
-
-
-
 // Задачи  с собеседований
 
 // 1. Какое будет выведено значение?
@@ -532,7 +529,7 @@ P.S. Функции вызывать не обязательно*/
 // });
 
 
-// События и их обработчики
+// События и их обработчики !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // 1способ
 //------------------------------------------------------
@@ -574,7 +571,7 @@ let i = 0;
 
 const deleteElement = (event) => {
     event.target.remove();
-    i++;
+    // i++;
 };
 
 const btn = document.querySelectorAll('button');
@@ -583,3 +580,24 @@ btn.forEach(item => {
     item.addEventListener('click', deleteElement);
 });
 //-------------------------------------------------------
+
+// console.log(document.querySelector('#button'));
+// console.log(document.querySelector('#button').parentNode);
+// console.log(document.querySelector('#button').parentElement);
+// console.log(document.querySelector('#button').parentNode.parentNode);
+// console.log(document.querySelector('[data-btn]'));
+// console.log(document.querySelector('[data-btn]').nextElementSibling);
+// console.log(document.querySelector('[data-btn]').previousElementSibling);
+
+
+// for (let node of document.body.childNodes) {
+//     if (node.nodeName == '#text') {
+//         continue;
+//     }
+//     console.log(node);
+// }
+
+
+const script = document.createElement('script');
+script.src = 'script.js';
+document.body.append(script);
